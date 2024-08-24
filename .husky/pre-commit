@@ -1,1 +1,1 @@
- npm run prettier --write . npm run prepare
+ npm run format && npm run prepare
