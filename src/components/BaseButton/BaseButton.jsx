@@ -26,5 +26,5 @@ export const BaseButton = () => {
         Info
       </button>
     </>
-  )
-}
+  );
+};
