@@ -1,10 +1,9 @@
 'use client';
 
 import Head from 'next/head';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-
 import { BaseButton } from '@/components/BaseButton/BaseButton';
-import { InputLabel } from '@/components/InputLabel/InputLabel';
 import { NavBar } from '@/components/NavBar/NavBar';
 import { MultiText } from '@/components/MultiText/MultiText';
 
@@ -18,7 +17,20 @@ const exampleTexts = [
 
 export default function Goals() {
   const router = useRouter();
+  const [objective, setObjective] = useState('');
+  const [timeLimit, setTimeLimit] = useState('');
+
   const handleNavigation = () => {
+    console.log(objective);
+    let payload = localStorage.getItem('payload');
+    payload = JSON.parse(payload);
+
+    if (payload) {
+      payload.userInfo.goal.objective = objective;
+      payload.userInfo.goal.timeLimit = timeLimit;
+      localStorage.setItem('payload', JSON.stringify(payload));
+    }
+
     router.push('/upload');
   };
 
@@ -31,16 +43,28 @@ export default function Goals() {
       </Head>
       <main className="items-left flex w-full flex-col p-2">
         <NavBar />
-        <InputLabel
-          label={'¿Cúal es el objetivo que quieres cumplir?‍'}
-          placeholder={'Asistir al Lollapalooza'}
-        />
-        <InputLabel label={'Indícanos un plazo'} placeholder={'6 meses'} />
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿Cuál es el objetivo que quieres cumplir?</label>
+          <input
+            value={objective}
+            onChange={(e) => setObjective(e.target.value)}
+            placeholder={'Asistir al Lollapalooza'}
+          />{' '}
+        </div>
+
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">Indícanos un plazo</label>
+          <input
+            value={timeLimit}
+            onChange={(e) => setTimeLimit(e.target.value)}
+            placeholder={'6 meses'}
+          />{' '}
+        </div>
         <section>
           <MultiText texts={exampleTexts} />
         </section>
       </main>
-      <BaseButton onClick={() => handleNavigation()} text="Continuar" />
+      <BaseButton onClick={handleNavigation} text="Continuar" />
     </div>
   );
 }
