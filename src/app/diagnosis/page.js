@@ -1,6 +1,5 @@
 'use client';
 
-import { PieChartCustom } from '@/components/PieChartCustom/PieChartCustom';
 import { BaseButton } from '../../components/BaseButton/BaseButton';
 import { MainLayout } from '@/Layout/MainLayout';
 import { useRouter } from 'next/navigation';
@@ -11,15 +10,17 @@ export default function Diagnosis() {
     router.push('/final-diagnosis');
   };
 
-  const payload = JSON.parse(localStorage.getItem('payload'));
-  const FinAlly = JSON.parse(localStorage.getItem('FinAlly'));
-
+  let payload, FinAlly;
+  if (typeof window !== 'undefined') {
+    payload = JSON.parse(localStorage.getItem('payload'));
+    FinAlly = JSON.parse(localStorage.getItem('FinAlly'));
+  }
 
   return (
     <MainLayout>
       <main className="flex min-h-screen flex-col p-8">
-        <p className="pb-2">¡{payload.userInfo.name}!, este es tu diagnóstico 🩺</p>
-        <p className="bg-blue-200 p-2 text-sm rounded mb-3">{FinAlly.data.profile}</p>
+        <p className="pb-2">¡{payload?.userInfo?.name}!, este es tu diagnóstico 🩺</p>
+        <p className="bg-blue-200 p-2 text-sm rounded mb-3">{FinAlly?.data?.profile}</p>
         {/* <p>{payload.userInfo.goal.objective}</p>
         <p>{payload.userInfo.goal.timeLimit}</p> */}
 
