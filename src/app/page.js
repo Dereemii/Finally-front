@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import { BaseButton } from '../components/BaseButton/BaseButton';
-import { InputLabel } from '../components/InputLabel/InputLabel';
 import { MainLayout } from '@/Layout/MainLayout';
 import { useRouter } from 'next/navigation';
 
