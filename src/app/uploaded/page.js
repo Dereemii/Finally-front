@@ -9,7 +9,49 @@ import { useRouter } from 'next/navigation';
 export default function Uploaded() {
   const router = useRouter();
   const handleNavigation = () => {
-    router.push('/diagnosis');
+    // dpcv
+    const payload = {
+      userInfo: {
+        name: '',
+        age: '',
+        city: '',
+        mail: '',
+        occupation: '',
+        emotions: '',
+        goal: {
+          objective: 'dfg',
+          timeLimit: 'dfg',
+        },
+      },
+      file: {
+        text: '',
+        fileName: 'EstadoCuenta.pdf',
+        emotion: '',
+      },
+      income: 0,
+    };
+
+    fetch('https://finally-3lt8.onrender.com/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => {
+        console.log('Status:', response.status);
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        //localStorage.setItem('FinAlly', JSON.stringify(data));
+      })
+      .catch((error) => {
+        console.error('Error:', error.message);
+        console.error('Detalles:', error);
+      });
+
+    //router.push('/diagnosis');
   };
 
   return (

@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import { BaseButton } from '../components/BaseButton/BaseButton';
 import { InputLabel } from '../components/InputLabel/InputLabel';
 import { MainLayout } from '@/Layout/MainLayout';
@@ -6,19 +7,56 @@ import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const router = useRouter();
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [city, setCity] = useState('');
+  const [occupation, setOccupation] = useState('');
+  const [income, setIncome] = useState('');
 
   const handleNavigation = () => {
+    const payload = {
+      userInfo: {
+        name: name,
+        age: age,
+        city: city,
+        mail: '',
+        occupation: occupation,
+        emotions: '',
+        goal: {
+          objective: '',
+          timeLimit: '',
+        },
+      },
+      file: {
+        text: '',
+        fileName: 'EstadoCuenta.pdf',
+        emotion: '',
+      },
+      income: 0,
+    };
+    localStorage.setItem('payload', JSON.stringify(payload));
     router.push('/traits');
   };
 
   return (
     <MainLayout>
       <main className="flex min-h-screen flex-col items-center p-8">
-        <InputLabel label={'¿Cómo quieres que te llamemos? 🙋‍'} />
-        <InputLabel label={'¿Cuál es tu edad? 🧐‍'} />
-        <InputLabel label={'¿Dónde vives? 📍‍'} />
-        <InputLabel label={'¿A qué te dedicas? 💼‍'} />
-        <InputLabel label={'¿Cuál es tu ingreso líquido? 💵‍'} />
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿Cómo quieres que te llamemos? 🙋</label>
+          <input value={name} onChange={(e) => setName(e.target.value)}/>    </div>
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿Cuál es tu edad? 🧐</label>
+          <input value={age} onChange={(e) => setAge(e.target.value)}/>    </div>
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿Dónde vives? 📍</label>
+          <input value={city} onChange={(e) => setCity(e.target.value)}/>    </div>
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿A qué te dedicas? 💼</label>
+          <input value={occupation} onChange={(e) => setOccupation(e.target.value)} />    </div>
+        <div className="flex w-full flex-col py-3.5">
+          <label className="mb-2">¿Cuál es tu ingreso líquido? 💵‍</label>
+          <input value={income} onChange={(e) => setIncome(e.target.value)} />    </div>
+
         <div className="fixed bottom-0 left-0 right-0 w-full bg-white p-4">
           <BaseButton onClick={() => handleNavigation()} text="Continuar" />
         </div>
