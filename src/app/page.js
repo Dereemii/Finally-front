@@ -19,9 +19,9 @@ export default function Home() {
         name: name,
         age: age,
         city: city,
-        mail: '',
+        mail: 'danielacortezvaras@gmail.com',
         occupation: occupation,
-        emotions: '',
+        emotions: 'Angustia',
         goal: {
           objective: '',
           timeLimit: '',
@@ -30,9 +30,9 @@ export default function Home() {
       file: {
         text: '',
         fileName: 'EstadoCuenta.pdf',
-        emotion: '',
+        emotion: 'Angustia',
       },
-      income: 0,
+      income: 1000000,
     };
     localStorage.setItem('payload', JSON.stringify(payload));
     router.push('/traits');
@@ -43,19 +43,24 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center p-8">
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿Cómo quieres que te llamemos? 🙋</label>
-          <input value={name} onChange={(e) => setName(e.target.value)}/>    </div>
+          <input value={name} onChange={(e) => setName(e.target.value)} />{' '}
+        </div>
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿Cuál es tu edad? 🧐</label>
-          <input value={age} onChange={(e) => setAge(e.target.value)}/>    </div>
+          <input value={age} onChange={(e) => setAge(e.target.value)} />{' '}
+        </div>
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿Dónde vives? 📍</label>
-          <input value={city} onChange={(e) => setCity(e.target.value)}/>    </div>
+          <input value={city} onChange={(e) => setCity(e.target.value)} />{' '}
+        </div>
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿A qué te dedicas? 💼</label>
-          <input value={occupation} onChange={(e) => setOccupation(e.target.value)} />    </div>
+          <input value={occupation} onChange={(e) => setOccupation(e.target.value)} />{' '}
+        </div>
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿Cuál es tu ingreso líquido? 💵‍</label>
-          <input value={income} onChange={(e) => setIncome(e.target.value)} />    </div>
+          <input value={income} onChange={(e) => setIncome(e.target.value)} />{' '}
+        </div>
 
         <div className="fixed bottom-0 left-0 right-0 w-full bg-white p-4">
           <BaseButton onClick={() => handleNavigation()} text="Continuar" />

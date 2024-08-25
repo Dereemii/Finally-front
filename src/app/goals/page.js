@@ -36,11 +36,21 @@ export default function Goals() {
         <NavBar />
         <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">¿Cuál es el objetivo que quieres cumplir?</label>
-          <input value={objective} onChange={(e) => setObjective(e.target.value)} placeholder={'Asistir al Lollapalooza'}/>    </div>
+          <input
+            value={objective}
+            onChange={(e) => setObjective(e.target.value)}
+            placeholder={'Asistir al Lollapalooza'}
+          />{' '}
+        </div>
 
-          <div className="flex w-full flex-col py-3.5">
+        <div className="flex w-full flex-col py-3.5">
           <label className="mb-2">Indícanos un plazo</label>
-          <input value={timeLimit} onChange={(e) => setTimeLimit(e.target.value)} placeholder={'6 meses'} />    </div>
+          <input
+            value={timeLimit}
+            onChange={(e) => setTimeLimit(e.target.value)}
+            placeholder={'6 meses'}
+          />{' '}
+        </div>
       </main>
       <BaseButton onClick={handleNavigation} text="Continuar" />
     </div>
