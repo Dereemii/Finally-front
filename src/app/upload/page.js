@@ -6,8 +6,10 @@ import { MainLayout } from '@/Layout/MainLayout';
 export default function Home() {
   return (
     <MainLayout>
-      <main className="flex min-h-screen flex-col  p-8">
-        <h2 className="text-md mb-2 mt-4 text-left">Súbenos el estado de cuenta de la tarjetas que ocupas frecuentemente.</h2>
+      <main className="flex min-h-screen flex-col p-8">
+        <h2 className="text-md mb-2 mt-4 text-left">
+          Súbenos el estado de cuenta de la tarjetas que ocupas frecuentemente.
+        </h2>
         <p className="mb-7 text-left text-xs">Con esto te ayudaremos a cumplir tu objetivo 🚀</p>
 
         <div className="flex flex-col items-center justify-center pt-20">
