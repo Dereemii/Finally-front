@@ -11,7 +11,7 @@ export const BaseButton = ({ text }) => {
     <>
       <button
         type="button"
-        class="flex w-full items-center justify-center rounded-full bg-black px-5 py-2.5 text-sm text-white hover:bg-gray-900 focus:outline-none focus:ring-gray-300 dark:border-gray-700 dark:bg-black dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+        className="flex w-full items-center justify-center rounded-full bg-black px-5 py-2.5 text-sm text-white hover:bg-gray-900 focus:outline-none focus:ring-gray-300 dark:border-gray-700 dark:bg-black dark:hover:bg-gray-700 dark:focus:ring-gray-700"
       >
         {text}
       </button>
