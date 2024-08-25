@@ -4,10 +4,9 @@
  * @component
  * @param {Object} props - The component props.
  * @param {string} props.text - The text to be displayed inside the button.
- * @param {string} props.bgColor - The color for the button.
  * @returns {JSX.Element} The rendered BaseButton component.
  */
-export const BaseButton = ({ text, bgColor }) => {
+export const BaseButton = ({ text }) => {
   return (
     <>
       <button
