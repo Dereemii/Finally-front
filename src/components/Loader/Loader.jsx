@@ -1,3 +1,8 @@
+/**
+ * Loader component.
+ * @component
+ * @returns {JSX.Element} The Loader component.
+ */
 export const Loader = () => {
   return (
     <div
