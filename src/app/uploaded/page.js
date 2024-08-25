@@ -52,7 +52,6 @@ export default function Uploaded() {
         console.error('Error:', error.message);
         console.error('Detalles:', error);
       });
-
   };
 
   return (

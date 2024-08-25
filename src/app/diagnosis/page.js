@@ -20,7 +20,7 @@ export default function Diagnosis() {
     <MainLayout>
       <main className="flex min-h-screen flex-col p-8">
         <p className="pb-2">¡{payload?.userInfo?.name}!, este es tu diagnóstico 🩺</p>
-        <p className="bg-blue-200 p-2 text-sm rounded mb-3">{FinAlly?.data?.profile}</p>
+        <p className="mb-3 rounded bg-blue-200 p-2 text-sm">{FinAlly?.data?.profile}</p>
         {/* <p>{payload.userInfo.goal.objective}</p>
         <p>{payload.userInfo.goal.timeLimit}</p> */}
 
