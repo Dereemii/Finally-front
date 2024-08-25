@@ -1,9 +1,20 @@
 'use client';
+
 import Head from 'next/head';
+import { useRouter } from 'next/navigation';
+
 import { BaseButton } from '@/components/BaseButton/BaseButton';
 import { InputLabel } from '@/components/InputLabel/InputLabel';
 import { NavBar } from '@/components/NavBar/NavBar';
-import { useRouter } from 'next/navigation';
+import { MultiText } from '@/components/MultiText/MultiText';
+
+const exampleTexts = [
+  'Javiera, viajó a Indonesia  🌴 disminuyendo su gasto en ropa.',
+  'Laura, fué al concierto de Taylor Swift 🦋 ',
+  'Gonzalo, se compró un auto 🚗',
+  'Javiera, viajó a Indonesia 🌴',
+  'Gonzalo, se compró un auto 🚗',
+];
 
 export default function Goals() {
   const router = useRouter();
@@ -25,6 +36,9 @@ export default function Goals() {
           placeholder={'Asistir al Lollapalooza'}
         />
         <InputLabel label={'Indícanos un plazo'} placeholder={'6 meses'} />
+        <section>
+          <MultiText texts={exampleTexts} />
+        </section>
       </main>
       <BaseButton onClick={() => handleNavigation()} text="Continuar" />
     </div>
