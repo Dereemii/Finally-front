@@ -40,7 +40,7 @@ export const ChipSelector = () => {
     'Estresada',
     'Desmotivada',
     'Segura',
-    'Insegura'
+    'Insegura',
   ];
 
   return (

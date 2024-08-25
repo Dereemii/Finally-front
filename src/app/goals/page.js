@@ -5,9 +5,7 @@ import { InputLabel } from '@/components/InputLabel/InputLabel';
 import { NavBar } from '@/components/NavBar/NavBar';
 import { useRouter } from 'next/navigation';
 
-
 export default function Goals() {
-
   const router = useRouter();
   const handleNavigation = () => {
     router.push('/upload');

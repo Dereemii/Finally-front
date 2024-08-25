@@ -5,7 +5,6 @@ import { BaseButton } from '@/components/BaseButton/BaseButton';
 import { useRouter } from 'next/navigation';
 
 export default function Traits() {
-
   const router = useRouter();
   const handleNavigation = () => {
     router.push('/goals');

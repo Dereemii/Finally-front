@@ -18,12 +18,14 @@ export default function Uploaded() {
         <h2 className="text-md mb-2 mt-4 text-left">
           Súbenos el estado de cuenta de la tarjetas que ocupas frecuentemente.
         </h2>
-        <p className="mb-7 text-left text-xs text-gray-600">Con esto te ayudaremos a cumplir tu objetivo 🚀</p>
+        <p className="mb-7 text-left text-xs text-gray-600">
+          Con esto te ayudaremos a cumplir tu objetivo 🚀
+        </p>
 
         <div className="flex flex-col items-center justify-center pt-20">
           <FileUpload />
         </div>
-        <div className="flex flex-col items-left justify-center pt-20">
+        <div className="items-left flex flex-col justify-center pt-20">
           <TextArea label={'¿Qué sientes al revisar tu estado de cuenta?'} />
         </div>
         <div className="fixed bottom-0 left-0 right-0 w-full bg-white p-4">

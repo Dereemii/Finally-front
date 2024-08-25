@@ -4,9 +4,7 @@ import { InputLabel } from '../components/InputLabel/InputLabel';
 import { MainLayout } from '@/Layout/MainLayout';
 import { useRouter } from 'next/navigation';
 
-
 export default function Home() {
-
   const router = useRouter();
 
   const handleNavigation = () => {

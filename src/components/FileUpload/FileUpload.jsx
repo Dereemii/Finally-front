@@ -22,19 +22,17 @@ export const FileUpload = () => {
     <div className="flex items-center space-x-4">
       <FloatingButton onChange={handleFileChange} />
 
-
-
       {fileName && (
         <>
           <input
             type="text"
             value={fileName || 'No se ha seleccionado ningún archivo'}
             disabled
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg"
+            className="flex-1 rounded-lg border border-gray-300 px-4 py-2"
           />
           <button
             onClick={handleRemoveFile}
-            className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
+            className="rounded-lg bg-red-600 px-4 py-2 text-white hover:bg-red-700"
           >
             Eliminar archivo
           </button>

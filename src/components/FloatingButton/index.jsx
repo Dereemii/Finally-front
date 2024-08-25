@@ -2,8 +2,10 @@
 export const FloatingButton = ({ onChange }) => {
   return (
     <>
-      <button className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-black bg-white text-black shadow-md hover:bg-gray-200"
-        onClick={() => document.getElementById('fileInput').click()}>
+      <button
+        className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-black bg-white text-black shadow-md hover:bg-gray-200"
+        onClick={() => document.getElementById('fileInput').click()}
+      >
         <svg
           width="21"
           height="21"
@@ -20,13 +22,7 @@ export const FloatingButton = ({ onChange }) => {
           />
         </svg>
       </button>
-      <input
-        type="file"
-        id="fileInput"
-        accept=".pdf"
-        onChange={onChange}
-        className="hidden"
-      />
+      <input type="file" id="fileInput" accept=".pdf" onChange={onChange} className="hidden" />
     </>
   );
 };
