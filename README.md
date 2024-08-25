@@ -18,10 +18,12 @@ https://github.com/users/Dereemii/projects/5/views/1
 ### Installation
 
 1. **Clone the repository**:
+
 ```bash
    git clone https://github.com/yourusername/finally.git
-   cd finally 
+   cd finally
 ```
+
 2. **Instal dependencies**:
 
 ```bash
@@ -31,6 +33,7 @@ npm install
 3. **Development**
 
 To start the development server, run:
+
 ```bash
 npm run dev
 ```
@@ -40,6 +43,7 @@ This will start the Next.js development server on http://localhost:3000.
 4. **Building for Production**
 
 To build the project for production, run:
+
 ```bash
 npm run build
 ```
@@ -55,12 +59,14 @@ npm run start
 ```
 
 ## Dependencies
+
 Next.js: v14.2.6
 React: ^18
 React DOM: ^18
 Recharts: ^2.12.7
 
 ## Dev Dependencies
+
 - Tailwind CSS: ^3.4.10
 - PostCSS: ^8.4.41
 - Autoprefixer: ^10.4.20
@@ -70,6 +76,7 @@ Recharts: ^2.12.7
 - Husky: ^9.1.5
 
 ## Engines
+
 Node.js: >=18.18.0
 
 ## Authors (Developers)
