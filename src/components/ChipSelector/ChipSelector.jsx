@@ -22,19 +22,25 @@ export const ChipSelector = () => {
   };
 
   const chipLabels = [
-    'Ansioso',
-    'Relajado',
+    'Ansiosa',
+    'Relajada',
     'Responsable',
-    'Impulsivo',
+    'Impulsiva',
     'Optimista',
-    'Indeciso',
-    'Determinado',
-    'Apasionado',
-    'Creativo',
-    'Ambicioso',
-    'Organizado',
-    'Temeroso',
-    'Motivado',
+    'Indecisa',
+    'Determinada',
+    'Apasionada',
+    'Creativa',
+    'Ambiciosa',
+    'Organizada',
+    'Temerosa',
+    'Motivada',
+    'Aburrrida',
+    'Cansada',
+    'Estresada',
+    'Desmotivada',
+    'Segura',
+    'Insegura',
   ];
 
   return (

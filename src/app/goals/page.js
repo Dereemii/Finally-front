@@ -1,9 +1,16 @@
+'use client';
 import Head from 'next/head';
 import { BaseButton } from '@/components/BaseButton/BaseButton';
 import { InputLabel } from '@/components/InputLabel/InputLabel';
 import { NavBar } from '@/components/NavBar/NavBar';
+import { useRouter } from 'next/navigation';
 
 export default function Goals() {
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/upload');
+  };
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-between bg-white p-4">
       <Head>
@@ -19,7 +26,7 @@ export default function Goals() {
         />
         <InputLabel label={'Indícanos un plazo'} placeholder={'6 meses'} />
       </main>
-      <BaseButton text="Continuar" />
+      <BaseButton onClick={() => handleNavigation()} text="Continuar" />
     </div>
   );
 }

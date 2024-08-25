@@ -1,14 +1,15 @@
 'use client';
-import { FloatingButton } from '@/components/FloatingButton';
+
 import { BaseButton } from '../../components/BaseButton/BaseButton';
 import { MainLayout } from '@/Layout/MainLayout';
+import { FileUpload } from '@/components/FileUpload/FileUpload';
+import { TextArea } from '@/components/TextArea';
 import { useRouter } from 'next/navigation';
 
-export default function Upload() {
+export default function Uploaded() {
   const router = useRouter();
-
   const handleNavigation = () => {
-    router.push('/uploaded');
+    router.push('/diagnosis');
   };
 
   return (
@@ -22,8 +23,10 @@ export default function Upload() {
         </p>
 
         <div className="flex flex-col items-center justify-center pt-20">
-          <h2 className="text-md mb-2 mt-4 text-center text-gray-500">Subir archivo</h2>
-          <FloatingButton />
+          <FileUpload />
+        </div>
+        <div className="items-left flex flex-col justify-center pt-20">
+          <TextArea label={'¿Qué sientes al revisar tu estado de cuenta?'} />
         </div>
         <div className="fixed bottom-0 left-0 right-0 w-full bg-white p-4">
           <BaseButton onClick={() => handleNavigation()} text="Continuar" />
