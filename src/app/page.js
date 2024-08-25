@@ -12,7 +12,9 @@ export default function Home() {
         <InputLabel label={'¿Dónde vives? 📍‍'} />
         <InputLabel label={'¿A que te dedicas? 💼‍'} />
         <InputLabel label={'¿Cuál es tu ingreso líquido? 💵‍'} />
-        <BaseButton text="Continuar" />
+        <div className="fixed bottom-0 left-0 right-0 w-full bg-white p-4">
+          <BaseButton text="Continuar" />
+        </div>
       </main>
     </MainLayout>
   );
