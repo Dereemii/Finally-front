@@ -9,6 +9,9 @@ Finally is a FrontEnd project developed for the AIHackathon. This project is bui
 You can find the Github Project Backlog here
 https://github.com/users/Dereemii/projects/5/views/1
 
+Backend for this project :
+https://github.com/Dereemii/FinAlly
+
 ## Getting Started
 
 ### Prerequisites
