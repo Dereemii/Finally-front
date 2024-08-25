@@ -40,18 +40,19 @@ export default function Uploaded() {
     })
       .then((response) => {
         console.log('Status:', response.status);
+        router.push('/diagnosis');
+
         return response.json();
       })
       .then((data) => {
         console.log(data);
-        //localStorage.setItem('FinAlly', JSON.stringify(data));
+        localStorage.setItem('FinAlly', JSON.stringify(data));
       })
       .catch((error) => {
         console.error('Error:', error.message);
         console.error('Detalles:', error);
       });
 
-    router.push('/diagnosis');
   };
 
   return (
