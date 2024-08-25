@@ -1,5 +1,6 @@
 {
-  "name": "finally-hackaton",
+  "name": "finally",
+  "description": "FrontEnd Project for AIHackathon",
   "version": "0.1.0",
   "private": true,
   "scripts": {

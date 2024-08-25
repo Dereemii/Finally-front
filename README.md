@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Finally
+
+**Version:** 0.1.0
+
+## Description
+
+Finally is a FrontEnd project developed for the AIHackathon. This project is built using Next.js, React, and Recharts, with Tailwind CSS for styling.
+
+You can find the Github Project Backlog here
+https://github.com/users/Dereemii/projects/5/views/1
+
+Backend for this project :
+https://github.com/Dereemii/FinAlly
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js**: Make sure you have Node.js version 18.18.0 or higher installed. You can download it from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository**:
+
+```bash
+   git clone https://github.com/yourusername/finally.git
+   cd finally
+```
+
+2. **Instal dependencies**:
+
+```bash
+npm install
+```
+
+3. **Development**
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the Next.js development server on http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. **Building for Production**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To build the project for production, run:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+This will create an optimized production build of your Next.js application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Starting the Production Server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+After building the project, you can start the production server with:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js: v14.2.6
+React: ^18
+React DOM: ^18
+Recharts: ^2.12.7
+
+## Dev Dependencies
+
+- Tailwind CSS: ^3.4.10
+- PostCSS: ^8.4.41
+- Autoprefixer: ^10.4.20
+- ESLint: ^9.9.1
+- Prettier: ^3.3.3
+- Prettier Plugin for Tailwind CSS: ^0.6.6
+- Husky: ^9.1.5
+
+## Engines
+
+Node.js: >=18.18.0
+
+## Authors (Developers)
+
+- 👤 **Leslie Herrera** Github: [@Dereemii](https://github.com/Dereemii)
+- 👤 **Daniela Cortez** Github: [@danielacrtzv](https://github.com/danielacrtzv)
+- 👤 **Cecilia Geraldo** Github: [@ceciliaGeraldo](https://github.com/ceciliaGeraldo)
