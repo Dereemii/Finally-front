@@ -8,7 +8,6 @@ import { InputLabel } from '@/components/InputLabel/InputLabel';
 import { NavBar } from '@/components/NavBar/NavBar';
 import { MultiText } from '@/components/MultiText/MultiText';
 
-
 const exampleTexts = [
   'Javiera, viajó a Indonesia  🌴 disminuyendo su gasto en ropa.',
   'Laura, fué al concierto de Taylor Swift 🦋 ',
