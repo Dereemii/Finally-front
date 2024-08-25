@@ -1,10 +1,11 @@
+import { NavBar } from '@/components/NavBar/NavBar';
 import { BaseButton } from '../components/BaseButton/BaseButton';
 import { InputLabel } from '../components/InputLabel/InputLabel';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8">
-      <h1>Finally</h1>
+      <NavBar />
       <InputLabel label={'¿Cómo quieres que te llamemos? 🙋‍'} />
       <InputLabel label={'¿Cuál es tu edad? 🧐‍'} />
       <InputLabel label={'¿Dónde vives? 📍‍'} />
