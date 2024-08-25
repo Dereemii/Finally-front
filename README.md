@@ -1,6 +1,15 @@
-# Finally
+# Finally FrontEnd Project
 
 **Version:** 0.1.0
+
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.6-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
+[![Recharts](https://img.shields.io/badge/Recharts-2.12.7-red?logo=recharts)](https://recharts.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.1-06B6D4?logo=tailwind-css)](https://tailwindcss.com/)
+[![Prettier](https://img.shields.io/badge/Prettier-3.3.3-F7B93E?logo=prettier)](https://prettier.io/)
+[![ESLint](https://img.shields.io/badge/ESLint-9.9.1-4B32C3?logo=eslint)](https://eslint.org/)
+[![Husky](https://img.shields.io/badge/Husky-9.1.5-543981?logo=git)](https://typicode.github.io/husky/#/)
+
 
 ## Description
 
