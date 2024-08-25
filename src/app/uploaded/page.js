@@ -51,7 +51,7 @@ export default function Uploaded() {
         console.error('Detalles:', error);
       });
 
-    //router.push('/diagnosis');
+    router.push('/diagnosis');
   };
 
   return (

@@ -19,9 +19,9 @@ export default function Home() {
         name: name,
         age: age,
         city: city,
-        mail: '',
+        mail: 'danielacortezvaras@gmail.com',
         occupation: occupation,
-        emotions: '',
+        emotions: 'Angustia',
         goal: {
           objective: '',
           timeLimit: '',
@@ -30,9 +30,9 @@ export default function Home() {
       file: {
         text: '',
         fileName: 'EstadoCuenta.pdf',
-        emotion: '',
+        emotion: 'Angustia',
       },
-      income: 0,
+      income: 1000000,
     };
     localStorage.setItem('payload', JSON.stringify(payload));
     router.push('/traits');
