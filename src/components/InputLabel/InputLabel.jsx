@@ -1,3 +1,11 @@
+/**
+ * InputLabel component.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.label - The label for the input.
+ * @returns {JSX.Element} The rendered InputLabel component.
+ */
 export const InputLabel = ({ label }) => {
   return (
     <div className="flex flex-col">
